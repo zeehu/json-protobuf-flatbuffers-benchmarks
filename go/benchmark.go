@@ -11,7 +11,7 @@ import (
 	"github.com/shirou/gopsutil/v3/cpu"
 	"google.golang.org/protobuf/proto"
 	pb "json-protobuf-flatbuffers-benchmarks/vector_data_pb"
-	fb "json-protobuf-flatbuffers-benchmarks/vector_data_fbs/VectorDataFbs"
+	fb "json-protobuf-flatbuffers-benchmarks/vector_data_fbs/flatbuf_vector_data"
 )
 
 // TestData 表示测试数据结构
