@@ -5,7 +5,7 @@ from tqdm import tqdm
 import psutil
 import vector_data_pb2 as pb
 import flatbuffers
-import VectorData, VectorDataset
+from flatbuf.vector_data import VectorData, VectorDataset
 
 def generate_test_data(num_vectors=500, vector_dim=768):
     """生成测试数据"""
