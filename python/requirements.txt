@@ -1,0 +1,4 @@
+numpy==1.24.3
+protobuf==4.24.4
+flatbuffers==23.5.26
+tqdm==4.66.1 

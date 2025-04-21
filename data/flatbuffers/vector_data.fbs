@@ -1,0 +1,18 @@
+// 向量数据定义
+namespace flatbuf.vector_data;
+
+// 为不同语言设置命名空间
+file_identifier "VDAT";  // 文件标识符，唯一确定该 schema
+file_extension "fbdat";  // 文件扩展名，明确是 flatbuffers 格式
+
+// 表示单个向量（一维数组）
+table VectorData {
+    values:[double];  // 向量中的值
+}
+
+// 表示向量的集合
+table VectorDataset {
+    vectors:[VectorData];  // 多个向量的集合
+}
+
+root_type VectorDataset;  // 指定根类型

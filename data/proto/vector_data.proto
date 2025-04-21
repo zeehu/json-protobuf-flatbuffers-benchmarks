@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package proto.vector_data;
+
+option go_package = "benchmark/proto_vector_data";
+option java_package = "com.benchmark.proto.vector_data";
+option java_multiple_files = true;
+option cc_enable_arenas = true;
+
+// VectorData 表示一个向量（一维数组）
+message VectorData {
+    repeated double values = 1;  // 向量中的值
+}
+
+// VectorDataset 表示向量的集合
+message VectorDataset {
+    repeated VectorData vectors = 1;  // 多个向量的集合
+}
